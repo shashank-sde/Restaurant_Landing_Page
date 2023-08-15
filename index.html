@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beauty.css">
+    <title>final pre1</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item item1">
+            <h1>Hungry Plates</h1>
+        </div>
+
+        <div class="item item2">
+            <div class="leftnav">
+                <li><a href="./index.html">Home</a></li>  
+                <li><a href="https://www.healthline.com/">Learn about Diet</a></li>                                              
+                <li><a href="https://www.eventbrite.com/b/ny--new-york/food-and-drink/">Food Events in NYC</a></li>                                       
+                <li><a href="https://www.google.com/maps/@40.7469568,-73.8342348,11.67z?hl=en&authuser=0">Branches</a></li>                                           
+                <li><a href="https://cooking.nytimes.com/guides">Learn to Cook</a></li>                                           
+                <li><a href="./contactme.html">Contact Us</a></li>     
+                
+                <section>
+                    
+                    <h2 class="partytext" style="color: white;">Plan a Party ?</h2>
+                    <video width="200" height="120" autoplay muted loop>                    
+                        <source src="./videos/vid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+            </div>
+        </div>
+
+        <div class="item item3">
+            <div class="display">
+                <div class="card">
+                    <div class="cardinner"><img src="./images/biryani.jpeg" alt="">
+                        <h2 class="foodtitle">Biryani<h3>$18</h3></h2>
+                        <div class="buybutton">
+                            <button onclick="changebir()" class="purchbut">Purchase</button>
+                            <button class="itemnums minus" onclick="changedecbir()">-</button>
+                            <p id="numbir" style="display: inline">0</p>
+                            <button class="itemnums plus" onclick="changebir()">+</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardinner"><img src="./images/noodles.jpeg" alt="">
+                        <h2 class="foodtitle">Noodles<h3>$14</h3></h2>
+                        <div class="buybutton">
+                            <button onclick="changenoo()" class="purchbut">Purchase</button>
+                            <button class="itemnums minus" onclick="changedecnoo()">-</button>
+                            <p id="numnoo" style="display: inline">0</p>
+                            <button class="itemnums plus" onclick="changenoo()">+</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardinner"><img src="./images/fries.jpeg" alt="">
+                        <h2 class="foodtitle">French Fries<h3>$4</h3></h2>
+                        <div class="buybutton">
+                            <button onclick="changefri()" class="purchbut">Purchase</button>
+                            <button class="itemnums minus" onclick="changedecfri()">-</button>
+                            <p id="numfri" style="display: inline">0</p>
+                            <button class="itemnums plus" onclick="changefri()">+</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardinner"><img src="./images/pav.jpeg" alt="">
+                        <h2 class="foodtitle">Pav Bhaji<h3>$9</h3></h2>
+                        <div class="buybutton">
+                            <button onclick="changepav()" class="purchbut">Purchase</button>
+                            <button class="itemnums minus" onclick="changedecpav()">-</button>
+                            <p id="numpav" style="display: inline">0</p>
+                            <button class="itemnums plus" onclick="changepav()">+</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardinner"><img src="./images/panipuri.jpeg" alt="">
+                        <h2 class="foodtitle">Pani Puri<h3>$10</h3></h2>
+                        <div class="buybutton">
+                            <button onclick="changepan()" class="purchbut">Purchase</button>
+                            <button class="itemnums minus" class="minus" onclick="changedecpan()">-</button>
+                            <p id="numpan" style="display: inline">0</p>
+                            <button class="itemnums plus" class="plus" onclick="changepan()">+</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardinner"><img src="./images/cake.jpeg" alt="">
+                        <h2 class="foodtitle">Cake<h3>$24</h3></h2>
+                        <div class="buybutton">
+                            <button onclick="changecake()" class="purchbut">Purchase</button>
+                            <button class="itemnums minus" onclick="changedeccake()">-</button>
+                            <p id="numcake" style="display: inline">0</p>
+                            <button class="itemnums plus" onclick="changecake()">+</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="cardinner"><img src="./images/icecream.jpeg" alt="">
+                        <h2 class="foodtitle">Ice Cream<h3>$6</h3></h2>
+                        <div class="buybutton">
+                            <button onclick="changeice()" class="purchbut">Purchase</button>
+                            <button class="itemnums minus" onclick="changedecice()">-</button>
+                            <p id="numice" style="display: inline">0</p>
+                            <button class="itemnums plus" onclick="changeice()">+</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardinner"><img src="./images/dosa.jpeg" alt="">
+                        <h2 class="foodtitle">Dosa<h3>$9</h3></h2>
+                        <div class="buybutton">
+                            <button onclick="changedosa()" class="purchbut">Purchase</button>
+                            <button class="itemnums minus" onclick="changedecdosa()">-</button>
+                            <p id="numdosa" style="display: inline">0</p>
+                            <button class="itemnums plus" onclick="changedosa()">+</button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>        
+
+        <div class="item item4">
+            <h3 class="fcaption">Thank you for Visting Us.</h3>
+        </div>
+    </div>
+
+    <script>
+        function changebir(){
+            const x=document.getElementById("numbir");
+            var val=parseInt(x.innerHTML);
+            if(val<10){   
+                val=val+1;
+                x.innerHTML=val;
+            }
+            else{
+                alert("Maximum value reached. Cannot add further items !")
+            }     
+        }
+        function changedecbir(){        
+            const x=document.getElementById("numbir");
+            var val=parseInt(x.innerHTML);
+            while(val>0){
+                val=val-1;
+                x.innerHTML=val;
+            }
+        }
+    
+        function changenoo(){
+            const x=document.getElementById("numnoo");
+            var val=parseInt(x.innerHTML);
+            if(val<10){   
+                val=val+1;
+                x.innerHTML=val;
+            }
+            else{
+                alert("Maximum value reached. Cannot add further items !")
+            }     
+        }
+        function changedecnoo(){        
+            const x=document.getElementById("numnoo");
+            var val=parseInt(x.innerHTML);
+            while(val>0){
+                val=val-1;
+                x.innerHTML=val;
+            }
+        }
+    
+        function changefri(){
+            const x=document.getElementById("numfri");
+            var val=parseInt(x.innerHTML);
+            if(val<10){   
+                val=val+1;
+                x.innerHTML=val;
+            }
+            else{
+                alert("Maximum value reached. Cannot add further items !")
+            }     
+        }
+        function changedecfri(){        
+            const x=document.getElementById("numfri");
+            var val=parseInt(x.innerHTML);
+            while(val>0){
+                val=val-1;
+                x.innerHTML=val;
+            }
+        }
+    
+        function changepav(){
+            const x=document.getElementById("numpav");
+            var val=parseInt(x.innerHTML);
+            if(val<10){   
+                val=val+1;
+                x.innerHTML=val;
+            }
+            else{
+                alert("Maximum value reached. Cannot add further items !")
+            }     
+        }
+        function changedecpav(){        
+            const x=document.getElementById("numpav");
+            var val=parseInt(x.innerHTML);
+            while(val>0){
+                val=val-1;
+                x.innerHTML=val;
+            }
+        }
+    
+        function changepan(){
+            const x=document.getElementById("numpan");
+            var val=parseInt(x.innerHTML);
+            if(val<10){   
+                val=val+1;
+                x.innerHTML=val;
+            }
+            else{
+                alert("Maximum value reached. Cannot add further items !")
+            }     
+        }
+        function changedecpan(){        
+            const x=document.getElementById("numpan");
+            var val=parseInt(x.innerHTML);
+            while(val>0){
+                val=val-1;
+                x.innerHTML=val;
+            }
+        }
+    
+        function changecake(){
+            const x=document.getElementById("numcake");
+            var val=parseInt(x.innerHTML);
+            if(val<10){   
+                val=val+1;
+                x.innerHTML=val;
+            }
+            else{
+                alert("Maximum value reached. Cannot add further items !")
+            }     
+        }
+        function changedeccake(){        
+            const x=document.getElementById("numcake");
+            var val=parseInt(x.innerHTML);
+            while(val>0){
+                val=val-1;
+                x.innerHTML=val;
+            }
+        }
+    
+        function changeice(){
+            const x=document.getElementById("numice");
+            var val=parseInt(x.innerHTML);
+            if(val<10){   
+                val=val+1;
+                x.innerHTML=val;
+            }
+            else{
+                alert("Maximum value reached. Cannot add further items !")
+            }     
+        }
+        function changedecice(){        
+            const x=document.getElementById("numice");
+            var val=parseInt(x.innerHTML);
+            while(val>0){
+                val=val-1;
+                x.innerHTML=val;
+            }
+        }
+    
+        function changedosa(){
+            const x=document.getElementById("numdosa");
+            var val=parseInt(x.innerHTML);
+            if(val<10){   
+                val=val+1;
+                x.innerHTML=val;
+            }
+            else{
+                alert("Maximum value reached. Cannot add further items !")
+            }     
+        }
+        function changedecdosa(){        
+            const x=document.getElementById("numdosa");
+            var val=parseInt(x.innerHTML);
+            while(val>0){
+                val=val-1;
+                x.innerHTML=val;
+            }
+        }
+    
+        function change(){
+            const x=document.getElementById("num");
+            var val=parseInt(x.innerHTML);
+            if(val<10){   
+                val=val+1;
+                x.innerHTML=val;
+            }
+            else{
+                alert("Maximum value reached. Cannot add further items !")
+            }     
+        }
+        function changedec(){        
+            const x=document.getElementById("num");
+            var val=parseInt(x.innerHTML);
+            while(val>0){
+                val=val-1;
+                x.innerHTML=val;
+            }
+        }
+    
+    </script>
+</body>
+</html>
